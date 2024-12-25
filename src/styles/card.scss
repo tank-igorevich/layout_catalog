@@ -14,23 +14,15 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   }
 
-  &__imac {
-    padding: 0 3px;
+  &__img {
     width: 160px;
     height: 134px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__imac img {
-    width: 100%;
-    height: 100%;
+    display: block;
+    margin: 0 auto 40px;
   }
 
   &__title {
-    margin-top: 40px;
-    margin-bottom: 0;
+    margin-bottom: 4px;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
@@ -46,10 +38,8 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-    padding: 4px 0 0;
-    margin: 0;
+    margin-bottom: 16px;
     color: #616070;
-    text-align: left;
   }
 
   &__review-label {
@@ -57,50 +47,44 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-    text-align: right;
   }
 
   &__review {
-    padding: 16px 0 0;
-    margin: 0;
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
-    white-space: nowrap;
-    gap: 17px;
+    justify-content: space-between;
   }
 
   &__button {
-    margin: 16px 0 0;
-    background-color: #00acdc;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: center;
     color: #fff;
-    font-family: Roboto, sans-serif;
+    background-color: #00acdc;
+    border: 1px solid #00acdc;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
-    width: 166px;
-    height: 40px;
-    border-radius: 5px;
     text-decoration: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    transition:
-      background-color 300ms ease,
-      color 300ms ease;
 
     &:hover {
       color: #00acdc;
       background-color: #fff;
-      border: 1px solid #00acdc;
     }
   }
 
   &__price {
-    margin: 24px 0 0;
     display: flex;
     justify-content: space-between;
-    gap: 85px;
+    margin-bottom: 16px;
 
     &-text {
       font-family: Roboto, sans-serif;
